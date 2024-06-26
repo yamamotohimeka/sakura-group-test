@@ -1,0 +1,328 @@
+body.entrance {
+	background-image: url(../img/common/ent-bg.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: auto 100%;
+	background-color: #000;
+
+	a {
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	a:link {
+		color: #FFF;
+	}
+
+	a:visited {
+		color: #FFF;
+	}
+
+	a:hover {
+		color: #FFF;
+	}
+
+	img {
+		vertical-align: bottom;
+		max-width: 100%;
+	}
+
+	a img {
+		border: none;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.ent24 {
+		padding-top: 30px;
+	}
+
+	/* コンテンツ */
+	#wrapper {
+		margin: 0px auto;
+		padding: 80px 0 0;
+		max-width: 414px;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	#head-section {
+		width: 100%;
+		margin: 0px auto;
+		background: #000;
+		border-radius: 0px 0px 7px 7px;
+		color: #C60000;
+		text-align: center;
+		padding: 4% 0;
+		font-size: 16px;
+	}
+
+	#ent_section {
+		// width: 80%;
+		margin: 60px auto 0;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.6);
+
+		p {
+			// margin-bottom: 30px;
+			margin-top: 30px;
+		}
+	}
+
+	// #ent_section p:last-child {
+	// 	margin-top: 20px;
+	// 	text-align: center;
+	// }
+
+	// #ent_section p:last-child img {
+	// 	width: 280px;
+	// }
+
+	#foot-section {
+		width: 96%;
+		margin: 5% auto 0;
+		background: #000;
+		border-radius: 7px 7px 0px 0px;
+		text-align: center;
+		padding: 4% 0;
+	}
+
+	#foot-section p {
+		padding: 0 1%;
+		font-size: 14px;
+		line-height: 2.8;
+	}
+
+	#foot-section p a {
+		padding: 4% 0;
+	}
+
+
+	/* 初めの画像切り替え */
+	#modal-content {
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		margin: 0 auto;
+		overflow: hidden;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+
+	#modal-overlay {
+		background-color: #000;
+		height: 140%;
+		left: 0;
+		opacity: 0.75;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	#animation_target {
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		margin: 0 auto;
+		position: relative;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	#animation_target img {
+		display: none;
+	}
+
+	.anime {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		bottom: 0;
+		height: auto;
+		left: 0;
+		margin: 0 auto;
+		min-height: 100%;
+		min-width: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: auto;
+	}
+
+	#loader {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		animation: 1.5s linear 0s normal none infinite running spin;
+		border-color: #fff transparent #fff #fff;
+		border-image: none;
+		border-radius: 30px;
+		border-style: solid;
+		border-width: 8px;
+		bottom: 0;
+		display: none;
+		height: 30px;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 30px;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	/*コラム*/
+	.column {
+		width: 100%;
+		background: #C60000;
+	}
+
+	.column a {
+		color: #FFF;
+		text-align: center;
+		padding: 10px 0;
+	}
+}
+
+
+
+.entrance {
+	.column {
+		width: 100%;
+		background: #C60000;
+		margin-left: 0;
+		margin-bottom: 0;
+		text-align: center;
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 40px;
+
+		img {
+			width: 80%;
+		}
+
+		.ent-logo {
+			width: 60%;
+			margin-right: 20px;
+		}
+	}
+
+	&__leave {
+		margin: 50px 0;
+		text-align: center;
+
+		&__container {
+			&__enter {
+				margin: 24px 0;
+
+				p {
+					margin-bottom: 8px;
+					font-size: 20px;
+				}
+			}
+
+			&__exit {
+				margin: 24px 0;
+
+				p {
+					margin-bottom: 8px;
+					font-size: 20px;
+				}
+			}
+		}
+
+		&__comment {
+			margin-top: 8px;
+			font-size: 12px;
+		}
+	}
+
+	&__group__head {
+		text-align: center;
+		font-size: 22px;
+		// margin-top: 70px;
+		padding-top: 70px;
+		padding-bottom: 30px;
+		font-family: 'ヒラギノ明朝 Pro W3',
+			'Hiragino Mincho Pro',
+			'游明朝',
+			'Yu Mincho',
+			'游明朝体',
+			'YuMincho',
+			'ＭＳ Ｐ明朝',
+			'MS PMincho',
+			serif;
+	}
+
+	&__bottom__text {
+		max-width: 574px;
+		margin: 0 auto;
+		padding: 24px;
+		font-size: 12px;
+		line-height: 1.8;
+		text-align: justify;
+		text-align-last: left;
+		margin-top: 30px;
+		// background: rgba(0, 0, 0, 0.6);
+	}
+
+	&__copy {
+		max-width: 574px;
+		margin: 0 auto;
+		padding: 24px;
+		font-size: 10px;
+		line-height: 1.4;
+		text-align: center;
+		// background: rgba(0, 0, 0, 0.6);
+		background-color: #000;
+	}
+}
+
+.speed-img {
+	width: 70%;
+}
+
+.eco-img {
+	width: 40%;
+}
+
+.esthe-img {
+	width: 90%;
+}
+
+.okusama-img {
+	width: 50%;
+}

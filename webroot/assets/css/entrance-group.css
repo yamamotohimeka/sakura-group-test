@@ -1,0 +1,68 @@
+@charset "UTF-8";
+body { background: #000; color: #fff; min-width: 1024px !important; }
+
+/* 各店エントランス */
+.entrance { position: relative; background-image: url(../img/entrance/bg03.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; width: 100%; }
+
+.entrance__section { position: relative; max-width: 1300px; margin: 0 auto; overflow: hidden; background-color: rgba(0, 0, 0, 0.7); background-image: url(../img/entrance/center-bg.png); background-repeat: no-repeat; background-size: 150%; background-repeat: no-repeat; background-position: top; background-blend-mode: multiply; }
+
+.entrance__title { margin: 90px 0 75px; text-align: center; }
+
+.entrance__title img { margin-right: 150px; }
+
+.entrance__shoplist { text-align: center; }
+
+.entrance__shoplist li { margin-bottom: 40px; letter-spacing: 0.9em; }
+
+.entrance__shoplist li a { font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif; color: #fff; font-size: 34px; -webkit-transition: .3s; transition: .3s; text-align: center; }
+
+.entrance__shoplist li a:hover { text-shadow: 1px 1px 2px #dd0556, 0 0 1em #dd0556, 0 0 0.2em #dd0556; -webkit-transition: .3s; transition: .3s; }
+
+.entrance__shoplist li:first-child { letter-spacing: 0; margin-right: 18px; }
+
+.entrance__leave { width: 64%; margin: 0 auto; }
+
+.entrance__leave__container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; margin: 0 auto; width: 70%; }
+
+.entrance__leave__container__enter { width: 45%; text-align: center; }
+
+.entrance__leave__container__enter:hover img { -webkit-animation: 1.4s ease-in-out infinite leaveButton; animation: 1.4s ease-in-out infinite leaveButton; }
+
+.entrance__leave__container__enter img { width: 80%; }
+
+.entrance__leave__container__18kin { width: 15%; margin-left: 14px; text-align: center; }
+
+.entrance__leave__container__18kin img { width: 92%; }
+
+.entrance__leave__container__exit { width: 40%; text-align: center; }
+
+.entrance__leave__container__exit img { width: 65%; }
+
+.entrance__leave__container p { text-align: center; margin-top: 14px; }
+
+.entrance__leave__comment { margin-top: 50px; margin-left: 30px; font-size: 14px; font-weight: 600; text-align: center; letter-spacing: 0.03rem; line-height: 1.6; }
+
+.entrance__group { width: 100%; margin: 100px auto 0; }
+
+.entrance__group--head { position: relative; text-align: center; padding-top: 35px; }
+
+.entrance__group--head::before { content: ''; position: absolute; height: 1px; width: 100%; z-index: 10; top: 75%; left: 50%; -webkit-transform: translate(-50%, 50%); transform: translate(-50%, 50%); background-color: #fff; }
+
+.entrance__group--head h2 { position: relative; display: inline-block; margin: 0 auto; width: 175px; background-color: #000; font-size: 22px; font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif; z-index: 100; }
+
+.entrance__group--box { width: 58%; margin: 0 auto; }
+
+.entrance__group--container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 90%; margin: 50px auto 65px; }
+
+.entrance__group--contents { width: 50%; margin-top: 38px; text-align: center; -webkit-transition: .3; transition: .3; }
+
+.entrance__group--contents img:hover { opacity: .8; -webkit-transition: .3; transition: .3; }
+
+.entrance__bottom { padding: 0 0 100px; background-color: #000; }
+
+.entrance__bottom--text { font-size: 15px; line-height: 2; text-align: center; letter-spacing: 0.05em; font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif; }
+
+.entrance__copy { font-size: 13px; padding: 20px 0; text-align: center; background: #000; font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif; }
+
+.bg-black { width: 100%; background-color: #000; }
+/*# sourceMappingURL=entrance-group.css.map */

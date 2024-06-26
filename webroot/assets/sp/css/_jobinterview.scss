@@ -1,0 +1,24 @@
+.jobinterview {
+  &-inner {
+    margin-left: 16rem;
+    margin-right: 16rem;
+    margin-bottom: 64rem;
+    padding: 1px;
+    background-image: linear-gradient(45deg, #a96a2f 21%,#54341d 44%,#bd884d 54%,#674d25 65%);
+  }
+  &-info {
+    padding: 24rem;
+    background-color: #000;
+    margin-bottom: 1px;
+  }
+  
+  &-title {
+    margin-bottom: 16rem;
+    font-size: 36rem;
+  }
+  &-text {
+    font-size: 28rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}

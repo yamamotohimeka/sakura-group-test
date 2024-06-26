@@ -1,0 +1,252 @@
+@import "mixin";
+
+body {
+  background: #000;
+  color: #fff;
+  min-width: 1024px !important;
+}
+
+/* 各店エントランス */
+.entrance {
+  position: relative;
+  background-image: url(../img/entrance/bg03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   background-image: url(../img/entrance/ent-logo.png);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 250px;
+  //   height: 165px;
+
+  //   @media (max-width:1800px) {
+  //     display: none;
+  //   }
+  // }
+
+  &__section {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    // padding-bottom: 46px;
+    overflow: hidden;
+    background-color: rgba($color: #000000, $alpha: .7);
+    background-image: url(../img/entrance/center-bg.png);
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-blend-mode: multiply;
+  }
+
+  &__title {
+    margin: 90px 0 75px;
+    text-align: center;
+
+    img {
+      margin-right: 150px;
+    }
+  }
+
+  &__shoplist {
+    text-align: center;
+
+    li {
+      margin-bottom: 40px;
+      letter-spacing: 0.9em;
+
+      a {
+        font-family: '游明朝',
+          'Yu Mincho',
+          YuMincho,
+          'Hiragino Mincho Pro',
+          serif;
+        color: #fff;
+        font-size: 34px;
+        transition: .3s;
+        text-align: center;
+
+        &:hover {
+          text-shadow: 1px 1px 2px #dd0556,
+            0 0 1em #dd0556,
+            0 0 0.2em #dd0556;
+          transition: .3s;
+        }
+      }
+
+      &:first-child {
+        letter-spacing: 0;
+        margin-right: 18px;
+      }
+    }
+  }
+
+  &__leave {
+    width: 64%;
+    margin: 0 auto;
+
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      margin: 0 auto;
+      width: 70%;
+
+      &__enter {
+        width: 45%;
+        text-align: center;
+
+        &:hover img {
+          animation: 1.4s ease-in-out infinite leaveButton;
+        }
+
+        img {
+          width: 80%;
+        }
+      }
+
+      &__18kin {
+        width: 15%;
+        margin-left: 14px;
+        text-align: center;
+
+        img {
+          width: 92%;
+        }
+      }
+
+      &__exit {
+        width: 40%;
+        text-align: center;
+
+        // &:hover img {
+        //   animation: 1.4s ease-in-out infinite leaveButton;
+        // }
+
+        img {
+          width: 65%;
+        }
+      }
+
+      p {
+        text-align: center;
+        margin-top: 14px;
+      }
+    }
+
+    &__comment {
+      margin-top: 50px;
+      margin-left: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 0.03rem;
+      line-height: 1.6;
+    }
+  }
+
+  &__group {
+    width: 100%;
+    margin: 100px auto 0;
+
+    &--head {
+      position: relative;
+      text-align: center;
+      padding-top: 35px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        z-index: 10;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-color: #fff;
+      }
+
+      h2 {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+        width: 175px;
+        background-color: #000;
+        font-size: 22px;
+        font-family: '游明朝',
+          'Yu Mincho',
+          YuMincho,
+          'Hiragino Mincho Pro',
+          serif;
+        z-index: 100;
+      }
+    }
+
+    &--box {
+      width: 58%;
+      margin: 0 auto;
+    }
+
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 50px auto 65px;
+    }
+
+    &--contents {
+      width: 50%;
+      margin-top: 38px;
+      text-align: center;
+      transition: .3;
+
+      img:hover {
+        opacity: .8;
+        transition: .3;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 0 0 100px;
+    background-color: #000;
+
+    &--text {
+      font-size: 15px;
+      line-height: 2;
+      text-align: center;
+      letter-spacing: 0.05em;
+      font-family: '游明朝',
+        'Yu Mincho',
+        YuMincho,
+        'Hiragino Mincho Pro',
+        serif;
+    }
+  }
+
+  &__copy {
+    font-size: 13px;
+    padding: 20px 0;
+    text-align: center;
+    background: #000;
+    font-family: '游明朝',
+      'Yu Mincho',
+      YuMincho,
+      'Hiragino Mincho Pro',
+      serif;
+  }
+}
+
+.bg-black {
+  width: 100%;
+  background-color: #000;
+}

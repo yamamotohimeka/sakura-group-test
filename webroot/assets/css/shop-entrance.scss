@@ -1,0 +1,443 @@
+.entrance-bg {
+  background-image: url(../img/entrance/bg03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   background-image: url(../img/entrance/ent-logo.png);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 250px;
+  //   height: 165px;
+
+  //   @media (max-width:1800px) {
+  //     display: none;
+  //   }
+  // }
+}
+
+.shop-entrance {
+  padding-top: 180px;
+  width: 1294px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-bottom: 45px;
+  background-color: rgba($color: #000000, $alpha: .7);
+  background-image: url(../img/entrance/center-bg.png);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-blend-mode: multiply;
+
+  @media(max-width:1294px) {
+    width: 100%;
+    padding-left: calc(47vw/(1294/100));
+    padding-right: calc(47vw/(1294/100));
+    padding-bottom: calc(45vw/(1294/100));
+  }
+
+  &__heading {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 164px;
+    padding-right: 49px;
+
+    @media(max-width:1294px) {
+      padding-right: calc(49vw/(1294/100));
+      padding-bottom: calc(164vw/(1294/100));
+    }
+
+    img {
+      width: 48%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 487px;
+    margin: 0 auto;
+
+    @media(max-width:1294px) {
+      width: calc(487vw/(1294/100));
+      padding-right: calc(32vw/(1294/100));
+    }
+
+    a {
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      font-family: 'ヒラギノ明朝 Pro W3',
+        'Hiragino Mincho Pro',
+        '游明朝',
+        'Yu Mincho',
+        '游明朝体',
+        'YuMincho',
+        'ＭＳ Ｐ明朝',
+        'MS PMincho',
+        serif;
+
+      @media(max-width:1294px) {
+        font-size: calc(16vw/(1294/100));
+      }
+    }
+
+    &--caution {
+      img {
+        @media(max-width:1294px) {
+          max-width: 80%;
+        }
+      }
+    }
+
+    &--enter,
+    &--exit {
+      padding-top: 10px;
+
+      @media(max-width:1294px) {
+        padding-top: calc(10vw/(1294/100));
+        text-align: center;
+      }
+
+      a {
+        img {
+          @media(max-width:1294px) {
+            max-width: 80%;
+          }
+        }
+
+        &:hover img {
+          animation: 1.4s ease-in-out infinite leaveButton;
+        }
+      }
+
+      p {
+        line-height: 2;
+      }
+    }
+  }
+
+  &__comment {
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 54px;
+
+    @media(max-width:1294px) {
+      padding-top: calc(17vw/(1294/100));
+      padding-left: calc(54vw/(1294/100));
+    }
+
+    a {
+      font-size: 15px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: -0.05em;
+
+      @media(max-width:1294px) {
+        font-size: calc(15vw/(1294/100));
+      }
+    }
+  }
+
+  &__group {
+    width: 58%;
+    margin: 0 auto;
+    padding-top: 114px;
+
+    @media(max-width:1294px) {
+      width: calc(825vw/(1294/100));
+      padding-top: calc(114vw/(1294/100));
+    }
+
+    &--heading {
+      text-align: center;
+      position: relative;
+      padding-top: 35px;
+
+      h2 {
+        font-size: 22px;
+        font-weight: bold;
+        position: relative;
+        z-index: 100;
+        display: inline-block;
+        width: 165px;
+        margin: 0 auto;
+        background-color: #000;
+        font-family: 'ヒラギノ明朝 Pro W3',
+          'Hiragino Mincho Pro',
+          '游明朝',
+          'Yu Mincho',
+          '游明朝体',
+          'YuMincho',
+          'ＭＳ Ｐ明朝',
+          'MS PMincho',
+          serif;
+
+        @media(max-width:1294px) {
+          font-size: calc(25vw/(1294/100));
+          width: calc(185vw/(1294/100));
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 10;
+      }
+    }
+  }
+
+  &__flex01 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // align-items: baseline;
+    padding-top: 15px;
+
+    @media(max-width:1294px) {
+      padding-top: calc(15vw/(1294/100));
+    }
+
+    img {
+      @media(max-width:1294px) {
+        max-width: 80%;
+      }
+    }
+  }
+
+  &__flex02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // align-items: baseline;
+    padding-top: 50px;
+
+    @media(max-width:1294px) {
+      padding-top: calc(50vw/(1294/100));
+    }
+
+    img {
+      @media(max-width:1294px) {
+        max-width: 80%;
+      }
+    }
+  }
+
+  &__item {
+    width: 50%;
+    text-align: center;
+    transition: .3;
+
+    img:hover {
+      opacity: 0.8;
+      transition: .3;
+    }
+  }
+
+  &__text {
+    padding-top: 93px;
+    padding-left: 18px;
+    font-size: 17px;
+    line-height: 1.3;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-feature-settings: "palt";
+
+    @media(max-width:1294px) {
+      padding-top: calc(93vw/(1294/100));
+      padding-left: calc(18vw/(1294/100));
+      font-size: calc(17vw/(1294/100));
+    }
+  }
+}
+
+.entrance-banner {
+  width: 1294px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba($color: #000000, $alpha: 1);
+  padding-bottom: 100px;
+
+  @media(max-width:1294px) {
+    width: 100%;
+    padding-bottom: calc(100vw/(1294/100));
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+    @media(max-width:1294px) {
+      padding-top: calc(15vw/(1294/100));
+    }
+
+    &:first-child {
+      padding-top: 30px;
+
+      @media(max-width:1294px) {
+        padding-top: calc(30vw/(1294/100));
+      }
+    }
+
+    div {
+      background-color: #fff;
+
+      &:first-child {
+        margin-right: 15px;
+
+        @media(max-width:1294px) {
+          padding-right: calc(15vw/(1294/100));
+        }
+      }
+
+      a:hover img {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+
+    @media(max-width:1294px) {
+      font-size: calc(14vw/(1294/100));
+      margin-top: calc(50vw/(1294/100));
+    }
+  }
+
+  &__form {
+    margin: 0 auto;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+    justify-content: space-between;
+
+    @media(max-width:1294px) {
+      margin-bottom: calc(30vw/(1294/100));
+    }
+  }
+}
+
+.entrance-footer {
+  background-color: #000;
+  text-align: center;
+  margin-top: 0;
+  width: 1294px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+
+  @media(max-width:1294px) {
+    width: 100%;
+  }
+
+  p {
+    padding: 13px 0;
+    color: #fff;
+    font-size: 20px;
+    font-feature-settings: "palt";
+
+    @media(max-width:1294px) {
+      padding: calc(13vw/(1294/100)) 0;
+      font-size: calc(20vw/(1294/100));
+    }
+  }
+}
+
+@keyframes leaveButton {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+// リンク
+.content-box,
+.links-box {
+
+  @media(max-width:1294px) {
+    width: calc(1010vw/(1294/100));
+  }
+}
+
+.link_form td input {
+  @media(max-width:1294px) {
+    width: calc(738vw/(1294/100));
+  }
+}
+
+dl.detailed {
+  @media(max-width:1294px) {
+    width: calc(670vw/(1294/100));
+    padding: calc(15vw/(1294/100));
+  }
+}
+
+.link_form p.tx_right,
+.link_form table {
+  @media(max-width:1294px) {
+    width: calc(1010vw/(1294/100));
+  }
+}
+
+.link_form table {
+  @media(max-width:1294px) {
+    font-size: calc(12vw/(1294/100));
+  }
+}
+
+.link_form table th {
+  @media(max-width:1294px) {
+    width: calc(250vw/(1294/100));
+    font-size: calc(15vw/(1294/100));
+  }
+}
+
+dl.detailed dd {
+  @media(max-width:1294px) {
+    font-size: calc(15vw/(1294/100));
+  }
+}
+
+dl.detailed dt {
+  @media(max-width:1294px) {
+    font-size: calc(18vw/(1294/100));
+  }
+}
+
+.link_form h2 span {
+  @media(max-width:1294px) {
+    width: calc(300vw/(1294/100));
+    font-size: calc(18vw/(1294/100));
+  }
+}
