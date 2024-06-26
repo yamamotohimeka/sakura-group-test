@@ -26,10 +26,16 @@
 .entrance {
   &__heading {
     text-align: center;
-    padding-top: calc(80vw/(375/100));
+    padding-top: calc(80vw / (375 / 100));
+    @include pc {
+      padding-top: 80rem;
+    }
 
     img {
       width: 85%;
+      @include pc {
+        width: 50%;
+      }
     }
   }
 
@@ -42,10 +48,10 @@
 
       a {
         font-family: '游明朝',
-          'Yu Mincho',
-          YuMincho,
-          'Hiragino Mincho Pro',
-          serif;
+        'Yu Mincho',
+        YuMincho,
+        'Hiragino Mincho Pro',
+        serif;
         color: #fff;
         font-size: 22px;
         transition: .3s;
@@ -53,9 +59,41 @@
 
         &:hover {
           text-shadow: 1px 1px 2px #dd0556,
-            0 0 1em #dd0556,
-            0 0 0.2em #dd0556;
+          0 0 1em #dd0556,
+          0 0 0.2em #dd0556;
           transition: .3s;
+        }
+      }
+    }
+
+    .exit {
+      margin: 0 auto;
+      width: 100%;
+      bottom: calc(20vw / (375 / 100));
+      font-size: calc(12vw / (375 / 100));
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.01em;
+
+      a {
+        position: relative;
+        font-size: calc(14vw / (375 / 100));
+        color: #fff;
+        letter-spacing: -1px;
+        font-weight: 500;
+
+        &::after {
+          position: absolute;
+          content: '';
+          bottom: calc(2vw / (375 / 100));
+          left: 0;
+          width: calc(27vw / (375 / 100));
+          height: 1px;
+          background-color: #fff;
+        }
+
+        &:hover {
+          opacity: .8;
         }
       }
     }
@@ -63,23 +101,29 @@
 
   &__container {
     text-align: center;
-    padding: calc(50vw/(375/100)) 0;
+    padding: calc(50vw / (375 / 100)) 0;
+    @include pc {
+      padding: 30rem 0;
+    }
 
     &--enter {
-      padding-bottom: calc(24vw/(375/100));
+      padding-bottom: calc(24vw / (375 / 100));
 
       p {
-        font-size: calc(20vw/(375/100));
+        font-size: calc(20vw / (375 / 100));
         line-height: 2;
         font-family: 'ヒラギノ明朝 Pro W3',
-          'Hiragino Mincho Pro',
-          '游明朝',
-          'Yu Mincho',
-          '游明朝体',
-          'YuMincho',
-          'ＭＳ Ｐ明朝',
-          'MS PMincho',
-          serif;
+        'Hiragino Mincho Pro',
+        '游明朝',
+        'Yu Mincho',
+        '游明朝体',
+        'YuMincho',
+        'ＭＳ Ｐ明朝',
+        'MS PMincho',
+        serif;
+        @include pc {
+          font-size: 10rem;
+        }
       }
 
       // img {
@@ -88,30 +132,42 @@
     }
 
     &--caution {
-      padding-bottom: calc(24vw/(375/100));
+      padding-bottom: calc(24vw / (375 / 100));
+      @include pc {
+        padding-bottom: 20rem;
+      }
     }
 
     &--comment {
-      padding-bottom: calc(24vw/(375/100));
+      padding-bottom: calc(24vw / (375 / 100));
+      @include pc {
+        padding-bottom: 20rem;
+      }
 
       a {
-        font-size: calc(12vw/(375/100));
+        font-size: calc(12vw / (375 / 100));
+        @include pc {
+          font-size: 8rem;
+        }
       }
     }
 
     &--exit {
       p {
-        font-size: calc(20vw/(375/100));
+        font-size: calc(20vw / (375 / 100));
         line-height: 2;
         font-family: 'ヒラギノ明朝 Pro W3',
-          'Hiragino Mincho Pro',
-          '游明朝',
-          'Yu Mincho',
-          '游明朝体',
-          'YuMincho',
-          'ＭＳ Ｐ明朝',
-          'MS PMincho',
-          serif;
+        'Hiragino Mincho Pro',
+        '游明朝',
+        'Yu Mincho',
+        '游明朝体',
+        'YuMincho',
+        'ＭＳ Ｐ明朝',
+        'MS PMincho',
+        serif;
+        @include pc {
+          font-size: 8rem;
+        }
       }
 
       // img {
@@ -128,7 +184,7 @@
 
   &__group {
     text-align: center;
-    padding: 0 0 calc(10vw/(375/100));
+    padding: 0 0 calc(10vw / (375 / 100));
 
     &--heading {
       text-align: center;
@@ -137,14 +193,17 @@
       padding-top: 70px;
       padding-bottom: 30px;
       font-family: 'ヒラギノ明朝 Pro W3',
-        'Hiragino Mincho Pro',
-        '游明朝',
-        'Yu Mincho',
-        '游明朝体',
-        'YuMincho',
-        'ＭＳ Ｐ明朝',
-        'MS PMincho',
-        serif;
+      'Hiragino Mincho Pro',
+      '游明朝',
+      'Yu Mincho',
+      '游明朝体',
+      'YuMincho',
+      'ＭＳ Ｐ明朝',
+      'MS PMincho',
+      serif;
+      @include pc {
+        font-size: 8rem;
+      }
 
       // &::before {
       //   position: absolute;
@@ -224,17 +283,21 @@
       text-align: justify;
       text-align-last: left;
       padding: 48rem 40rem;
-      font-size: calc(13vw/(375/100));
+      font-size: calc(13vw / (375 / 100));
       letter-spacing: -0.05em;
+      @include pc {
+        font-size: 10rem;
+        padding: 10rem 20rem;
+      }
     }
   }
 
   &__box {
-    padding: calc(20vw/(375/100));
+    padding: calc(20vw / (375 / 100));
     text-align: center;
 
     div {
-      padding: calc(5vw/(375/100)) 0;
+      padding: calc(5vw / (375 / 100)) 0;
     }
   }
 
@@ -249,11 +312,17 @@
   &__wrap {
     background-color: #000;
     padding: 48rem 48rem;
+    @include pc {
+      padding: 20rem 40rem;
+    }
 
     .detailed {
       font-size: 22rem;
       text-align: justify;
       line-height: 1.5;
+      @include pc {
+        font-size: 11rem;
+      }
 
       dd {
         margin-bottom: 10px;
@@ -261,8 +330,15 @@
     }
 
     .banner {
+      @include pc {
+        font-size: 12rem;
+      }
+
       dt {
         font-size: 30rem;
+        @include pc {
+          font-size: 12rem;
+        }
       }
     }
   }
@@ -271,10 +347,18 @@
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 22rem;
+    @include pc {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      font-size: 10rem;
+    }
   }
 
   .tx_right {
     font-size: 22rem;
+    @include pc {
+      font-size: 8rem;
+    }
   }
 
   table {
@@ -283,6 +367,9 @@
     tr {
       display: block;
       margin-bottom: 64rem;
+      @include pc {
+        margin-bottom: 24rem;
+      }
     }
 
     th {
@@ -294,6 +381,10 @@
         margin-bottom: 8rem;
         color: #fff;
         font-size: 24rem;
+        @include pc {
+          margin-bottom: 2rem;
+          font-size: 10rem;
+        }
       }
     }
 
@@ -305,6 +396,11 @@
         line-height: 56rem;
         padding: 4rem 16rem;
         font-size: 30rem;
+        @include pc {
+          font-size: 10rem;
+          line-height: 13rem;
+          padding: 4rem 8rem;
+        }
       }
     }
   }
@@ -322,6 +418,11 @@
       color: #fff;
       font-size: 35rem;
       line-height: 96rem;
+      @include pc {
+        font-size: 10rem;
+        line-height: 13rem;
+        padding: 4rem 8rem;
+      }
     }
   }
 }
@@ -330,10 +431,18 @@
   margin-right: 20rem;
   padding-bottom: 48rem;
   margin-left: 20rem;
+  @include pc {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   h2 {
     font-size: 30rem;
     margin: 8rem 0;
+    @include pc {
+      font-size: 9rem;
+    }
   }
 
   ul {
@@ -349,9 +458,12 @@
   margin-top: 0;
   position: relative;
   z-index: 10;
+  @include pc {
+    font-size: 12rem;
+  }
 
   p {
-    padding: calc(25vw/(375/100)) 0;
+    padding: calc(25vw / (375 / 100)) 0;
     color: #fff;
     font-size: 11px;
   }

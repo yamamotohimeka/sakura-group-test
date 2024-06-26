@@ -24,6 +24,15 @@
   src: url('../fonts/NotoSerifJP-bold.woff') format('woff');
 }
 
+/* Scss Document */
+$breakpoint-pc: 1200px;
+@mixin pc {
+  @media screen and (min-width: ($breakpoint-pc)) {
+    @content;
+  }
+}
+
+
 // 変数
 // $c_pink: #ff3a80;
 $c_pink: #ff9100;
@@ -352,7 +361,7 @@ h3 {
     }
   }
 
-  .navigation-button.open+.navigation {
+  .navigation-button.open + .navigation {
     z-index: 998;
     opacity: 1;
   }
@@ -593,4 +602,4 @@ h3 {
 @import "jobinterview";
 @import "column";
 @import "entrance";
-@import "shop-entrance"
+@import "shop-entrance";
